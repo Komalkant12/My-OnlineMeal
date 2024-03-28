@@ -1,0 +1,395 @@
+/*CSS reset*/
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*CSS variable*/
+
+:root{
+    --navbar-height: 59;
+}
+
+/* styling navbar */
+#navbar{
+   display: flex;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+   
+}
+#navbar{
+   display: flex;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+   
+}
+#navbar .item{
+    margin: 0 auto;
+}
+
+/* navigation bar :logo & images*/
+
+#logo{
+    
+ margin:  5px;  
+}
+#logo img{
+    
+    height: 55px;
+   margin: 3px 6px;
+}
+
+/* navigation bar styling: list styling */
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    top: 0;
+
+}
+
+#navbar ul{
+     margin: 15px;
+    display: flex;
+   font-family: 'Baloo bhai',cursive;
+}
+
+
+#navbar ul li{
+    /*color: white;*/
+    list-style: none;
+    font-size: 1.2rem;
+}
+ 
+#navbar ul li a{
+    color: #fff;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+ 
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(107, 101, 101);
+}
+
+.right-container{
+    display: block;
+    margin-left: auto;
+}
+
+.search-box{
+    margin-top: 20px;
+    border: khaki;
+    border-bottom: 1px solid #aaa;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: rgb(179, 151, 151);
+    width: 250px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.search-box:focus{
+    width: 400px;
+    border-color:rgb(75, 70, 70);
+}
+
+.sub-btn{
+    background: transparent;
+    height: 30px;
+    padding: 0 20px;
+    color: rgb(243, 236, 236);
+    border-radius: 5px;
+    outline: none;
+    
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0 10px;
+}
+
+.sun-btn a:hover{
+    color: bl;
+    background-color: lightgray;
+}
+
+.right-container a:hover{
+    border-radius: 20px;
+    color: black;
+    background-color: rgb(151, 146, 146);
+}
+.login-link{
+    color: #fff;
+    background-color: transparent;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.carousel-container{
+    position: relative;
+    width: 100%;
+    height: 530px;
+    padding: 20px 0;
+    overflow-x: hidden;
+    margin-top: 80px;
+}
+
+.carousel{
+    display: flex;
+    width: 92%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+
+
+/*home section*/
+
+#home{
+   
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 753px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before{
+    content: "";
+    position:absolute;
+    background: url('../image/background 1.jpg') no-repeat center center/cover;
+    height: 80%;
+   width:100%;
+   top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+  
+    
+}
+#home h1{
+    color: #fff;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+   
+    font-family: 'Bree Serif', serif;
+}
+
+/*sevice section*/
+#services{
+    margin: 10px;
+    display: flex;
+
+   
+}
+
+#services .box{
+    border: 2px solid rgb(122, 38, 38);
+    padding: 10px;
+    margin: 5px 10px;
+    border-radius: 25px;
+    background: #d4cccc;
+    height: 300px;
+    width: 500px;
+    margin-bottom:1px;
+    margin: 60px;
+   
+}
+#services.box img{
+  
+    height: 40px;
+    width: 50px;
+    margin: auto;
+    display: block;
+   
+    
+}
+#sevices .box p{
+ 
+    font-family: 'Bree Serif', serif;
+}
+
+.box {
+    padding: 200px;
+}
+
+/*utility class*/
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+
+
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+
+}
+
+.btn{
+    padding: 0px 0px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+  text-align: center;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../image/contact.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+/*client section*/
+#client-section{
+    height: 404px;
+    
+  
+  }
+  #client-section::before{
+      content: "";
+      position: absolute;
+      background: url('../image/bg.jpg')no-repeat center center/cover;
+      width: 100%;
+      height: 44%;
+      z-index: -1;
+      opacity: 0.5;
+      
+    
+  }
+  #clients{
+      display: flex;
+      justify-content: center;
+     align-items: center;
+   }
+   
+  .clients-item{
+      padding: 34px;
+  }
+  
+  #clients img
+  {
+      padding: 40px;
+      height: 154px;
+      background-color: auto;
+     opacity: 0.8;
+  }
+
+ #client .client-item .apple{
+      background-color:transparent;
+  }
+  .client-item .acer{
+      background-color:none;
+  }
+  
+
+  .client-item .swiggy {
+      background-color:transparent;
+  }
+
+  
