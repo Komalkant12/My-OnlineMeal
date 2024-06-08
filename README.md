@@ -18,7 +18,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/online-meal-website.git
+git clone (https://github.com/Komalkant12/My-OnlineMeal.git)
 cd online-meal-website
 Set up the database:
 
@@ -26,21 +26,21 @@ Create a MySQL database.
 Import the database schema from database.sql:
 sql
 Copy code
-mysql -u your-username -p your-database < database.sql
+mysql -u your-admin-p your-database < database.sql
 Configure the database connection:
 
 Open config.php and set your database credentials:
 php
 Copy code
 <?php
-$servername = "your-servername";
-$username = "your-username";
-$password = "your-password";
-$dbname = "your-database";
+$servername = "Appache";
+$username = "admin";
+$password = "admin@gmail.com";
+
 ?>
 Start the server:
 
-Make sure you have a web server like Apache or Nginx installed.
+Make sure you have a web server like XAMMP Apache or Nginx installed.
 Place the project files in the web server's root directory (e.g., htdocs for XAMPP).
 Start the web server.
 Usage
